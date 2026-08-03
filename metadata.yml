@@ -1,6 +1,6 @@
 Identifier: eos6pj2
 Slug: nafm-embeddings
-Status: In progress
+Status: Ready
 Title: NaFM Natural Product Embeddings
 Description: NaFM is a scaffold-aware graph foundation model that turns a 
   natural-product SMILES into a 1024-dimensional embedding. Pretrained on the 
@@ -38,6 +38,18 @@ Source Code: https://github.com/TomAIDD/NaFM-Official
 License: MIT
 Contributor: TiagoJanela
 Incorporation Date: '2026-08-03'
+Last Packaging Date: '2026-08-03'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6pj2.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos6pj2
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 305.0
 Environment Size: 1315.0
+Image Size: 1930.09
+Computational Performance 1: 35.46
+Computational Performance 2: 26.16
+Computational Performance 3: 25.49
+Computational Performance 4: 67.39
+Computational Performance 5: 252.91
