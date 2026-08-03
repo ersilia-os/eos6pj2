@@ -2,8 +2,7 @@
 
 NaFM is a scaffold-aware graph foundation model that turns a natural-product SMILES into a 1024-dimensional embedding. Pretrained on the COCONUT natural-product database via contrastive and masked-graph learning, it captures scaffold and side-chain information useful for taxonomy classification, genome mining, and virtual screening. The embedding is a general-purpose featurizer specialised for natural-product chemical space.
 
-This model was incorporated on 2026-08-03.
-
+This model was incorporated on 2026-08-03.Last packaged on 2026-08-03.
 
 ## Information
 ### Identifiers
@@ -44,12 +43,19 @@ _10 of 1024 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos6pj2](https://hub.docker.com/r/ersiliaos/eos6pj2)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6pj2.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6pj2.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `305`
 - **Environment Size (Mb):** `1315`
+- **Image Size (Mb):** `1930.09`
 
+**Computational Performance (seconds):**
+- 10 inputs: `35.46`
+- 100 inputs: `25.49`
+- 10000 inputs: `252.91`
 
 ### References
 - **Source Code**: [https://github.com/TomAIDD/NaFM-Official](https://github.com/TomAIDD/NaFM-Official)
