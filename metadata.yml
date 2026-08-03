@@ -2,45 +2,37 @@ Identifier: eos6pj2
 Slug: nafm-embeddings
 Status: In progress
 Title: NaFM Natural Product Embeddings
-Description: NaFM is a scaffold-aware graph foundation model that turns a 
-  natural-product SMILES into a 512-dimensional embedding. Pretrained on the 
+Description: NaFM is a scaffold-aware graph foundation model that turns a
+  natural-product SMILES into a 1024-dimensional embedding. Pretrained on the
   COCONUT natural-product database via contrastive and masked-graph learning, it
   captures scaffold and side-chain information useful for taxonomy 
   classification, genome mining, and virtual screening. The embedding is a 
   general-purpose featurizer specialised for natural-product chemical space.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Representation
+Subtask: Featurization
 Input:
   - Compound
 Input Dimension: 1
 Output:
   - Value
-  - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Dimension: 1024
+Output Consistency: Fixed
+Interpretation: 1024-dimensional scaffold-aware embedding specialised for natural-product chemical space
 Tag:
   - Descriptor
   - Embedding
   - Natural product
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Any
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Any
+Publication Type: Peer reviewed
 Publication Year: 2026
-Publication: https://www.nature.com/articles/s42256-026-01226-8
+Publication: https://doi.org/10.1038/s42256-026-01226-8
 Source Code: https://github.com/TomAIDD/NaFM-Official
 License: MIT
 Contributor: TiagoJanela
