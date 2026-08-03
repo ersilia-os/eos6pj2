@@ -72,8 +72,11 @@ def _to_data(smi):
          for a in mol.GetAtoms()], dtype=torch.long)
     ei, ea = [], []
     for b in mol.GetBonds():
+        bt, bd = b.GetBondType(), b.GetBondDir()
+        if bt not in BONDS or bd not in BONDDIR:
+            return None  # out-of-vocabulary bond type/direction -> NaN row
         s, e = b.GetBeginAtomIdx(), b.GetEndAtomIdx()
-        feat = [BONDS.index(b.GetBondType()), BONDDIR.index(b.GetBondDir())]
+        feat = [BONDS.index(bt), BONDDIR.index(bd)]
         ei += [(s, e), (e, s)]; ea += [feat, feat]
     edge_index = torch.tensor(ei, dtype=torch.long).t().contiguous() if ei else torch.zeros((2, 0), dtype=torch.long)
     edge_attr = torch.tensor(ea, dtype=torch.long) if ea else torch.zeros((0, 2), dtype=torch.long)
