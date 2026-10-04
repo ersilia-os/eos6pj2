@@ -2,12 +2,13 @@ Identifier: eos6pj2
 Slug: nafm-embeddings
 Status: Ready
 Title: NaFM Natural Product Embeddings
-Description: NaFM is a scaffold-aware graph foundation model that turns a 
-  natural-product SMILES into a 1024-dimensional embedding. Pretrained on the 
-  COCONUT natural-product database via contrastive and masked-graph learning, it
-  captures scaffold and side-chain information useful for taxonomy 
-  classification, genome mining, and virtual screening. The embedding is a 
-  general-purpose featurizer specialised for natural-product chemical space.
+Description: NaFM produces 1,024 features from a foundation model pretrained specifically
+  on natural products, whose fused rings, dense stereocentres and unusual scaffolds
+  are poorly represented in the synthetic compound sets most encoders learn from.
+  Pretraining on natural product structures gives an embedding better matched to that
+  chemistry, useful for tasks from taxonomic assignment to bioactivity prediction.
+  As with other learned representations, individual dimensions have no direct chemical
+  reading.
 Deployment:
   - Local
 Source: Local
@@ -21,8 +22,8 @@ Output:
   - Value
 Output Dimension: 1024
 Output Consistency: Fixed
-Interpretation: 1024-dimensional scaffold-aware embedding specialised for 
-  natural-product chemical space
+Interpretation: 1024 features encoding molecular structure from a natural-product
+  foundation model.
 Tag:
   - Descriptor
   - Embedding
