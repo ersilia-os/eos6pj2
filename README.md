@@ -1,6 +1,6 @@
 # NaFM Natural Product Embeddings
 
-NaFM produces 1,024 features from a foundation model pretrained specifically on natural products, whose fused rings, dense stereocentres and unusual scaffolds are poorly represented in the synthetic compound sets most encoders learn from. Pretraining on natural product structures gives an embedding better matched to that chemistry, useful for tasks from taxonomic assignment to bioactivity prediction. As with other learned representations, individual dimensions have no direct chemical reading.
+Encodes a molecule as 1,024 features with NaFM, a scaffold-aware graph foundation model that Ding and colleagues pretrained on the COCONUT natural product collection by combining contrastive learning with masked subgraph reconstruction. Separating scaffold-level biosynthetic signal from side-chain decoration lets the embedding serve taxonomy classification, the linking of metabolites to biosynthetic gene clusters, and virtual screening. Natural product chemistry is the intended domain, and individual dimensions carry no direct chemical reading.
 
 This model was incorporated on 2026-08-03.Last packaged on 2026-08-03.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-08-03.Last packaged on 2026-08-03.
 ### Output
 - **Output Dimension:** `1024`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 1024 features encoding molecular structure from a natural-product foundation model.
+- **Interpretation:** 1024 scaffold-aware features embedding a molecule in natural-product chemical space.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
