@@ -2,13 +2,14 @@ Identifier: eos6pj2
 Slug: nafm-embeddings
 Status: Ready
 Title: NaFM Natural Product Embeddings
-Description: Encodes a molecule as 1,024 features with NaFM, a scaffold-aware graph
-  foundation model that Ding and colleagues pretrained on the COCONUT natural product
-  collection by combining contrastive learning with masked subgraph reconstruction.
-  Separating scaffold-level biosynthetic signal from side-chain decoration lets the
-  embedding serve taxonomy classification, the linking of metabolites to biosynthetic
-  gene clusters, and virtual screening. Natural product chemistry is the intended
-  domain, and individual dimensions carry no direct chemical reading.
+Description: Encodes a molecule as 1,024 features with NaFM, a scaffold-aware 
+  graph foundation model that Ding and colleagues pretrained on the COCONUT 
+  natural product collection by combining contrastive learning with masked 
+  subgraph reconstruction. Separating scaffold-level biosynthetic signal from 
+  side-chain decoration lets the embedding serve taxonomy classification, the 
+  linking of metabolites to biosynthetic gene clusters, and virtual screening. 
+  Natural product chemistry is the intended domain, and individual dimensions 
+  carry no direct chemical reading.
 Deployment:
   - Local
 Source: Local
@@ -22,8 +23,8 @@ Output:
   - Value
 Output Dimension: 1024
 Output Consistency: Fixed
-Interpretation: 1024 scaffold-aware features embedding a molecule in natural-product
-  chemical space.
+Interpretation: 1024 scaffold-aware features embedding a molecule in 
+  natural-product chemical space.
 Tag:
   - Descriptor
   - Embedding
@@ -40,7 +41,7 @@ License: MIT
 Contributor: TiagoJanela
 Incorporation Date: '2026-08-03'
 Last Packaging Date: '2026-08-03'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos6pj2.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos6pj2
 Docker Architecture:
